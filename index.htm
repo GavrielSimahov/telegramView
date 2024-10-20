@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כרטיס ביקור דיגיטלי</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .business-info {
+            padding: 20px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+        }
+
+        .business-info h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .business-info p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        .contact-info {
+            padding: 20px;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                max-width: 100%;
+                margin: 0 10px;
+            }
+
+            .business-info h1 {
+                font-size: 1.5em;
+            }
+
+            .contact-info a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <header>
+            <img src="/img1.jpg" alt="תמונה מלבנית של העסק">
+        </header>
+        <section class="business-info">
+            <h1>G.C Inve$t$ignal$
+            </h1>
+            <p>Welcome to the world of trading! Here you will receive signals regarding assets related to stocks/crypto
+            </p>
+        </section>
+        <section class="contact-info">
+            <a href="https://t.me/GCProInvestSignals" target="_blank">Join us on Telegram</a>
+        </section>
+    </div>
+
+    <script>
+        // אפשר להוסיף לוגיקה אם תצטרך ל-JavaScript בהמשך
+    </script>
+</body>
+</html>
